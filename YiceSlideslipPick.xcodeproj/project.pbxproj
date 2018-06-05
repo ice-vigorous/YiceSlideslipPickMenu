@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F5CC47220C515C1005BE454 /* YiceSlidelipPickCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5CC47120C515C1005BE454 /* YiceSlidelipPickCommonModel.m */; };
 		0FFCDCCD20BFD032006A7AF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFCDCCC20BFD032006A7AF5 /* AppDelegate.m */; };
 		0FFCDCD020BFD032006A7AF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFCDCCF20BFD032006A7AF5 /* ViewController.m */; };
 		0FFCDCD320BFD032006A7AF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFCDCD120BFD032006A7AF5 /* Main.storyboard */; };
@@ -16,6 +17,11 @@
 		0FFCDCDE20BFD032006A7AF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFCDCDD20BFD032006A7AF5 /* main.m */; };
 		0FFCDCE820BFD033006A7AF5 /* YiceSlideslipPickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFCDCE720BFD033006A7AF5 /* YiceSlideslipPickTests.m */; };
 		0FFCDCF320BFD033006A7AF5 /* YiceSlideslipPickUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFCDCF220BFD033006A7AF5 /* YiceSlideslipPickUITests.m */; };
+		0FFCDD0320BFD209006A7AF5 /* YiceSlidelipPickerMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFCDD0220BFD209006A7AF5 /* YiceSlidelipPickerMenu.m */; };
+		0FFCDD0620BFD232006A7AF5 /* YiceSlidelipPickPch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFCDD0520BFD232006A7AF5 /* YiceSlidelipPickPch.m */; };
+		0FFCDD0920BFFC8F006A7AF5 /* YiceSlidelipPickCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFCDD0820BFFC8F006A7AF5 /* YiceSlidelipPickCell.m */; };
+		0FFCDD0C20C01826006A7AF5 /* YiceSlidelipPickReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFCDD0B20C01826006A7AF5 /* YiceSlidelipPickReusableView.m */; };
+		0FFCDD0F20C0E31B006A7AF5 /* NSString+AdjustSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFCDD0D20C0E31B006A7AF5 /* NSString+AdjustSize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F5CC47020C515C1005BE454 /* YiceSlidelipPickCommonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YiceSlidelipPickCommonModel.h; sourceTree = "<group>"; };
+		0F5CC47120C515C1005BE454 /* YiceSlidelipPickCommonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YiceSlidelipPickCommonModel.m; sourceTree = "<group>"; };
 		0FFCDCC820BFD032006A7AF5 /* YiceSlideslipPick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiceSlideslipPick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFCDCCB20BFD032006A7AF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0FFCDCCC20BFD032006A7AF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +61,16 @@
 		0FFCDCEE20BFD033006A7AF5 /* YiceSlideslipPickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiceSlideslipPickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFCDCF220BFD033006A7AF5 /* YiceSlideslipPickUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YiceSlideslipPickUITests.m; sourceTree = "<group>"; };
 		0FFCDCF420BFD033006A7AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FFCDD0120BFD209006A7AF5 /* YiceSlidelipPickerMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YiceSlidelipPickerMenu.h; sourceTree = "<group>"; };
+		0FFCDD0220BFD209006A7AF5 /* YiceSlidelipPickerMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YiceSlidelipPickerMenu.m; sourceTree = "<group>"; };
+		0FFCDD0420BFD232006A7AF5 /* YiceSlidelipPickPch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YiceSlidelipPickPch.h; sourceTree = "<group>"; };
+		0FFCDD0520BFD232006A7AF5 /* YiceSlidelipPickPch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YiceSlidelipPickPch.m; sourceTree = "<group>"; };
+		0FFCDD0720BFFC8F006A7AF5 /* YiceSlidelipPickCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YiceSlidelipPickCell.h; sourceTree = "<group>"; };
+		0FFCDD0820BFFC8F006A7AF5 /* YiceSlidelipPickCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YiceSlidelipPickCell.m; sourceTree = "<group>"; };
+		0FFCDD0A20C01826006A7AF5 /* YiceSlidelipPickReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YiceSlidelipPickReusableView.h; sourceTree = "<group>"; };
+		0FFCDD0B20C01826006A7AF5 /* YiceSlidelipPickReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YiceSlidelipPickReusableView.m; sourceTree = "<group>"; };
+		0FFCDD0D20C0E31B006A7AF5 /* NSString+AdjustSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AdjustSize.m"; sourceTree = "<group>"; };
+		0FFCDD0E20C0E31B006A7AF5 /* NSString+AdjustSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AdjustSize.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +101,7 @@
 		0FFCDCBF20BFD032006A7AF5 = {
 			isa = PBXGroup;
 			children = (
+				0FFCDD0020BFD092006A7AF5 /* YiceSlideslipPickMenu */,
 				0FFCDCCA20BFD032006A7AF5 /* YiceSlideslipPick */,
 				0FFCDCE620BFD033006A7AF5 /* YiceSlideslipPickTests */,
 				0FFCDCF120BFD033006A7AF5 /* YiceSlideslipPickUITests */,
@@ -133,6 +152,25 @@
 				0FFCDCF420BFD033006A7AF5 /* Info.plist */,
 			);
 			path = YiceSlideslipPickUITests;
+			sourceTree = "<group>";
+		};
+		0FFCDD0020BFD092006A7AF5 /* YiceSlideslipPickMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0FFCDD0120BFD209006A7AF5 /* YiceSlidelipPickerMenu.h */,
+				0FFCDD0220BFD209006A7AF5 /* YiceSlidelipPickerMenu.m */,
+				0FFCDD0420BFD232006A7AF5 /* YiceSlidelipPickPch.h */,
+				0FFCDD0520BFD232006A7AF5 /* YiceSlidelipPickPch.m */,
+				0FFCDD0720BFFC8F006A7AF5 /* YiceSlidelipPickCell.h */,
+				0FFCDD0820BFFC8F006A7AF5 /* YiceSlidelipPickCell.m */,
+				0FFCDD0A20C01826006A7AF5 /* YiceSlidelipPickReusableView.h */,
+				0FFCDD0B20C01826006A7AF5 /* YiceSlidelipPickReusableView.m */,
+				0FFCDD0E20C0E31B006A7AF5 /* NSString+AdjustSize.h */,
+				0FFCDD0D20C0E31B006A7AF5 /* NSString+AdjustSize.m */,
+				0F5CC47020C515C1005BE454 /* YiceSlidelipPickCommonModel.h */,
+				0F5CC47120C515C1005BE454 /* YiceSlidelipPickCommonModel.m */,
+			);
+			path = YiceSlideslipPickMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +235,7 @@
 		0FFCDCC020BFD032006A7AF5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YiceSlidelipPick;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "音冰冰";
 				TargetAttributes = {
@@ -268,10 +307,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FFCDD0620BFD232006A7AF5 /* YiceSlidelipPickPch.m in Sources */,
 				0FFCDCD020BFD032006A7AF5 /* ViewController.m in Sources */,
+				0FFCDD0F20C0E31B006A7AF5 /* NSString+AdjustSize.m in Sources */,
+				0F5CC47220C515C1005BE454 /* YiceSlidelipPickCommonModel.m in Sources */,
+				0FFCDD0920BFFC8F006A7AF5 /* YiceSlidelipPickCell.m in Sources */,
 				0FFCDCCD20BFD032006A7AF5 /* AppDelegate.m in Sources */,
 				0FFCDCDE20BFD032006A7AF5 /* main.m in Sources */,
 				0FFCDCD620BFD032006A7AF5 /* YiceSlideslipPick.xcdatamodeld in Sources */,
+				0FFCDD0C20C01826006A7AF5 /* YiceSlidelipPickReusableView.m in Sources */,
+				0FFCDD0320BFD209006A7AF5 /* YiceSlidelipPickerMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
