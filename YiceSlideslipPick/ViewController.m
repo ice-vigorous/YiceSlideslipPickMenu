@@ -27,7 +27,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.btnSearch];
     self.mainKindArray = @[@"服务",@"球队",@"城市",@"品牌"];
-    self.subKindArray = [NSMutableArray arrayWithArray:@[[NSMutableArray arrayWithArray:@[[self creatPcikMenuItemModelWithString:@"打车"],[self creatPcikMenuItemModelWithString:@"坐飞机"],[self creatPcikMenuItemModelWithString:@"坐高铁"],[self creatPcikMenuItemModelWithString:@"上珠穆朗玛峰呐呐呐"],[self creatPcikMenuItemModelWithString:@"尼泊尔的小山丘"],[self creatPcikMenuItemModelWithString:@"瓜迪奥拉的曼城生涯"]]],[NSMutableArray arrayWithArray:@[[self creatPcikMenuItemModelWithString:@"皇马"],[self creatPcikMenuItemModelWithString:@"巴萨"],[self creatPcikMenuItemModelWithString:@"塞维利亚"],[self creatPcikMenuItemModelWithString:@"西班牙人"],[self creatPcikMenuItemModelWithString:@"凯尔特人"],[self creatPcikMenuItemModelWithString:@"莫斯科中央陆军"],[self creatPcikMenuItemModelWithString:@"拜仁"],[self creatPcikMenuItemModelWithString:@"多特蒙德"],[self creatPcikMenuItemModelWithString:@"里昂"],[self creatPcikMenuItemModelWithString:@"尼斯"],[self creatPcikMenuItemModelWithString:@"曼城"],[self creatPcikMenuItemModelWithString:@"曼联"],[self creatPcikMenuItemModelWithString:@"阿森纳"],[self creatPcikMenuItemModelWithString:@"切尔西"],[self creatPcikMenuItemModelWithString:@"热刺"]]],[NSMutableArray arrayWithArray:@[[self creatPcikMenuItemModelWithString:@"拉萨"],[self creatPcikMenuItemModelWithString:@"赤峰"],[self creatPcikMenuItemModelWithString:@"墨尔本"],[self creatPcikMenuItemModelWithString:@"迪士尼"],[self creatPcikMenuItemModelWithString:@"加利福利亚"],[self creatPcikMenuItemModelWithString:@"洛杉矶"],[self creatPcikMenuItemModelWithString:@"波士顿"],[self creatPcikMenuItemModelWithString:@"克利夫兰"],[self creatPcikMenuItemModelWithString:@"圣安东尼奥"],[self creatPcikMenuItemModelWithString:@"德克萨斯"],[self creatPcikMenuItemModelWithString:@"新奥尔良"],[self creatPcikMenuItemModelWithString:@"华盛顿"]]],[NSMutableArray arrayWithArray:@[[self creatPcikMenuItemModelWithString:@"拉萨"],[self creatPcikMenuItemModelWithString:@"赤峰"],[self creatPcikMenuItemModelWithString:@"墨尔本"],[self creatPcikMenuItemModelWithString:@"迪士尼"],[self creatPcikMenuItemModelWithString:@"加利福利亚"],[self creatPcikMenuItemModelWithString:@"洛杉矶"],[self creatPcikMenuItemModelWithString:@"波士顿"],[self creatPcikMenuItemModelWithString:@"克利夫兰"],[self creatPcikMenuItemModelWithString:@"圣安东尼奥"],[self creatPcikMenuItemModelWithString:@"德克萨斯"],[self creatPcikMenuItemModelWithString:@"新奥尔良"],[self creatPcikMenuItemModelWithString:@"华盛顿"]]]]];
+    self.subKindArray = [NSMutableArray arrayWithArray:@[[NSMutableArray arrayWithArray:@[[self creatPcikMenuItemModelWithString:@"打车"],[self creatPcikMenuItemModelWithString:@"坐飞机"],[self creatPcikMenuItemModelWithString:@"坐高铁"],[self creatPcikMenuItemModelWithString:@"上珠穆朗玛峰呐呐呐"],[self creatPcikMenuItemModelWithString:@"尼泊尔的小山丘"],[self creatPcikMenuItemModelWithString:@"瓜迪奥拉的曼城生涯"]]],[NSMutableArray arrayWithArray:@[[self creatPcikMenuItemModelWithString:@"皇马"],[self creatPcikMenuItemModelWithString:@"巴萨"],[self creatPcikMenuItemModelWithString:@"塞维利亚"],[self creatPcikMenuItemModelWithString:@"西班牙人"],[self creatPcikMenuItemModelWithString:@"凯尔特人"],[self creatPcikMenuItemModelWithString:@"莫斯科中央陆军"],[self creatPcikMenuItemModelWithString:@"拜仁"],[self creatPcikMenuItemModelWithString:@"多特蒙德"],[self creatPcikMenuItemModelWithString:@"里昂"],[self creatPcikMenuItemModelWithString:@"尼斯"],[self creatPcikMenuItemModelWithString:@"曼城"],[self creatPcikMenuItemModelWithString:@"曼联"],[self creatPcikMenuItemModelWithString:@"阿森纳"],[self creatPcikMenuItemModelWithString:@"切尔西"],[self creatPcikMenuItemModelWithString:@"热刺"]]],[NSMutableArray arrayWithArray:@[[self creatPcikMenuItemModelWithString:@"拉萨"],[self creatPcikMenuItemModelWithString:@"赤峰"],[self creatPcikMenuItemModelWithString:@"墨尔本"],[self creatPcikMenuItemModelWithString:@"迪士尼"],[self creatPcikMenuItemModelWithString:@"加利福利亚"],[self creatPcikMenuItemModelWithString:@"洛杉矶"],[self creatPcikMenuItemModelWithString:@"波士顿"],[self creatPcikMenuItemModelWithString:@"克利夫兰"],[self creatPcikMenuItemModelWithString:@"圣安东尼奥"],[self creatPcikMenuItemModelWithString:@"德克萨斯"],[self creatPcikMenuItemModelWithString:@"新奥尔良"],[self creatPcikMenuItemModelWithString:@"华盛顿"]]],[NSMutableArray arrayWithArray:@[[self creatPcikMenuItemModelWithString:@"克里斯蒂亚诺.罗纳尔多"],[self creatPcikMenuItemModelWithString:@"李奥纳多.梅西"],[self creatPcikMenuItemModelWithString:@"我是梅西，我现在慌得一B"],[self creatPcikMenuItemModelWithString:@"德罗巴欧冠绝平"],[self creatPcikMenuItemModelWithString:@"巴乔点球踢飞"],[self creatPcikMenuItemModelWithString:@"雷阿伦关键三分"],[self creatPcikMenuItemModelWithString:@"詹姆斯连砍25分"],[self creatPcikMenuItemModelWithString:@"诺维斯基暴打波什"],[self creatPcikMenuItemModelWithString:@"吉诺比利蛇形突破"],[self creatPcikMenuItemModelWithString:@"哈登欧洲后撤步"],[self creatPcikMenuItemModelWithString:@"奥尼尔猴子挂树"],[self creatPcikMenuItemModelWithString:@"加加内特anything is possible"]]]]];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -52,7 +52,15 @@
 }
 
 -(void)mSearchClick{
+    self.pickMenu.frame = CGRectMake([UIScreen mainScreen].bounds.size.width, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     [[[UIApplication sharedApplication].delegate window] addSubview:self.pickMenu];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationRepeatAutoreverses:NO];
+    [UIView setAnimationTransition:UIViewAnimationTransitionNone forView:self.pickMenu cache:YES];
+    [UIView setAnimationDuration:0.3];
+    self.pickMenu.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+    [UIView commitAnimations];
 }
 
 #pragma mark ---- pickDatasource
@@ -98,6 +106,10 @@
             model.isSelected = @"";
         }
     }
+}
+
+- (void)menu:(YiceSlidelipPickerMenu *)menu submmitSelectedIndexPaths:(NSArray<NSIndexPath *> *)indexpaths{
+    //同步数据
 }
 
 

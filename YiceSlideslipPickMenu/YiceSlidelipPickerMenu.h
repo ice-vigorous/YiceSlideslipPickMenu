@@ -30,6 +30,8 @@
 - (void)reloadDataWithMenu:(YiceSlidelipPickerMenu *)menu;
 
 - (void)menu:(YiceSlidelipPickerMenu *)menu didSelectRowsAtIndexPaths:(NSArray<NSIndexPath *>*)indexPaths;//多选,这里不做延伸了，有兴趣的朋友自己拓展
+
+- (void)menu:(YiceSlidelipPickerMenu *)menu submmitSelectedIndexPaths:(NSArray<NSIndexPath*>*)indexpaths;
 @end
 
 @interface YiceSlidelipPickerMenu : UIView
