@@ -1,8 +1,6 @@
 # YiceSlideslipPickMenu
 仿照京东APP、互海通APP的侧滑搜索，这个正常多了，纯手码，感兴趣的可以参考下思路
 
-# YiceSlideslipPickMenu
-仿照京东APP、互海通APP的侧滑搜索，这个正常多了，纯手码，感兴趣的可以参考下思路
 
 
 ###更新选中的cell和Header的代理方法
