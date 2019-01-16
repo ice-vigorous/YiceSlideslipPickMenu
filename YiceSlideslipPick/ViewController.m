@@ -119,10 +119,9 @@
             model.isSelected = @"";
         }
     }
-    for (NSMutableArray <YiceSlidelipPickCommonModel*> *array in self.mainKindArray) {
-        for (YiceSlidelipPickCommonModel *model in array) {
+    for (YiceSlidelipPickCommonModel* model in self.mainKindArray) {
+        
             model.isSelected = @"";
-        }
     }
 }
 
