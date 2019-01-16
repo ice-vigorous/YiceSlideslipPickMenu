@@ -14,7 +14,7 @@
 @required
 - (NSInteger)menu:(YiceSlidelipPickerMenu *)menu numberOfRowsInSection:(NSInteger)section;
 - (NSInteger)numberOfSectionsInMenu:(YiceSlidelipPickerMenu *)menu;
-- (NSString *)menu:(YiceSlidelipPickerMenu *)menu titleForSection:(NSInteger)section;
+- (YiceSlidelipPickCommonModel *)menu:(YiceSlidelipPickerMenu *)menu titleForSection:(NSInteger)section;
 @optional
 - (YiceSlidelipPickCommonModel *)menu:(YiceSlidelipPickerMenu *)menu titleForRowAtIndexPath:(NSIndexPath *)indexPath;
 
@@ -26,6 +26,8 @@
 - (void)menu:(YiceSlidelipPickerMenu *)menu didSelectRowAtIndexPath:(NSIndexPath *)indexPath;//单选选中
 
 - (void)menu:(YiceSlidelipPickerMenu *)menu didDeselectRowAtIndexPath:(NSIndexPath *)indexPath;//单选取消选中
+
+- (void)menu:(YiceSlidelipPickerMenu *)menu clickHeaderAtIndexPath:(NSIndexPath *)indexPath;//点击header(选中全部或取消全部)
 
 - (void)reloadDataWithMenu:(YiceSlidelipPickerMenu *)menu;
 

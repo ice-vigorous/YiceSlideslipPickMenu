@@ -149,8 +149,7 @@ const NSUInteger kBaseHeaderTag = 1234;
 {
     if ([self.datasource menu:self numberOfRowsInSection:section] > 6)
     {
-        YiceSlidelipPickReusableView *header = [collectionView viewWithTag:kBaseHeaderTag+section];
-        if (header.isShowAll)
+        if (((YiceSlidelipPickCommonModel*)[self.datasource menu:self titleForSection:section]).isSelected.length>0)
         {
             //是展示全部
             return [self.datasource menu:self numberOfRowsInSection:section];
@@ -175,13 +174,17 @@ const NSUInteger kBaseHeaderTag = 1234;
         if ([collectionView viewWithTag:kBaseHeaderTag + indexPath.section]) {
             //如果存在，则不需要初始化，只需要在原有的基础上赋值
             header = [collectionView viewWithTag:kBaseHeaderTag + indexPath.section];
+//            NSLog(@"存在%ld------%ld",(long)header.tag,(long)indexPath.section);
         } else {
             header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:headerID forIndexPath:indexPath];
+            header.tag = kBaseHeaderTag + indexPath.section;
+//            NSLog(@"不存在%ld------%ld",(long)header.tag,(long)indexPath.section);
         }
         __weak typeof(header) weakHeader = header;
-        header.tag = kBaseHeaderTag + indexPath.section;
-        header.mainTitle.text = [self.datasource menu:self titleForSection:indexPath.section];
-        header.mainTitle.frame = CGRectMake(10, 10, [[self.datasource menu:self titleForSection:indexPath.section] yice_stringSizeWithFont:[UIFont systemFontOfSize:yiceSlidelipPickMenuUIValue()->MAINTITLELABEL_FONT] maxWidth:[UIScreen mainScreen].bounds.size.width/2.0].width, 20);
+        __weak typeof(self) this = self;
+        header.mainTitle.text = ((YiceSlidelipPickCommonModel*)[self.datasource menu:self titleForSection:indexPath.section]).text;
+        header.isShowAll = ((YiceSlidelipPickCommonModel*)[self.datasource menu:self titleForSection:indexPath.section]).isSelected.length>0?YES:NO;
+        header.mainTitle.frame = CGRectMake(10, 10, [((YiceSlidelipPickCommonModel*)[self.datasource menu:self titleForSection:indexPath.section]).text yice_stringSizeWithFont:[UIFont systemFontOfSize:yiceSlidelipPickMenuUIValue()->MAINTITLELABEL_FONT] maxWidth:[UIScreen mainScreen].bounds.size.width/2.0].width, 20);
         header.selectedTitle.frame = CGRectMake(CGRectGetMaxX(header.mainTitle.frame) + 10, 10, yiceSlidelipPickMenuUIValue()->HEADER_WIDTH - CGRectGetWidth(header.mainTitle.frame) - 20 - 20 - 7 - 10, 20);
         if (!header.isShowAll){
             //如果不是展示全部
@@ -200,13 +203,11 @@ const NSUInteger kBaseHeaderTag = 1234;
             }else{
                 header.arrowsIcon.image = [UIImage imageNamed:@" "];
             }
-            
         }
         if ([collectionView indexPathsForSelectedItems]) {
             //判断有选中单位
             for (NSIndexPath * path in [collectionView indexPathsForSelectedItems]) {
                 if (path.section == indexPath.section) {
-                    //
                     header.selectedTitle.text = [self.datasource menu:self titleForRowAtIndexPath:path].text;
                     header.selectedTitle.textColor = [UIColor redColor];
                 }
@@ -215,6 +216,7 @@ const NSUInteger kBaseHeaderTag = 1234;
         header.btnClickBlock = ^(UIButton *btn) {
             //按钮点击
             weakHeader.isShowAll = !weakHeader.isShowAll;
+            [this.delegate menu:this clickHeaderAtIndexPath:indexPath];
             [UIView performWithoutAnimation:^{
                 [collectionView reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section]];
             }];
